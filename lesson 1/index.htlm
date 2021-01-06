@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Site Demo</title>
+    <style>
+        h1 {
+            color: tomato;
+            font-size: 70px;
+            font-family: sans-serif;
+            text-decoration: underline;
+            text-align: center;
+        }
+        
+        p {
+            font-family: sans-serif;
+            color: darkgray;
+        }
+        
+        button {
+            background-color: orangered;
+            color: white;
+            border: 0;
+            padding: 20px;
+        }
+        
+        .btn1 {
+            background-color: orangered;
+            color: white;
+            border: 0;
+            padding: 20px;
+        }
+        
+        .btn2 {
+            background-color: rgb(21, 224, 174);
+            color: white;
+            border: 0;
+            padding: 20px;
+        }
+    </style>
+
+
+
+    <script>
+        function changeText(param) {
+            let headerTitle = document.getElementById('hello');
+            if (param == 1) {
+                headerTitle.textContent = 'Hello world 👋';
+            } else if (param == 2) {
+                headerTitle.textContent = 'Hello you 👍';
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="hello">Hello world 👋</h1>
+    <p>Welcome to your first HTML site.</p>
+    <div>
+        <button onclick="changeText(1)" class="btn1">Click 1!</button>
+        <button onclick="changeText(2)" class="btn2">Click 2!</button>
+    </div>
+</body>
+
+</html>

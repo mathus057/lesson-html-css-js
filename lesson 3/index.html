@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="index.js"></script> -->
+    <script src="jquery.min.js"></script>
+    <title>Page Title</title>
+</head>
+
+
+<body>
+    <h1 id="hello">Hello world 👋</h1>
+    <p>Welcome to your first HTML site.</p>
+    <div>
+        <button class="btn1">Click 1!</button>
+        <button class="btn2">Click 2!</button>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    $(document).ready(function() {
+        $(".btn1").click(function() {
+            $("#hello").text("Hello 1 👋 by jquery ");
+        });
+        $(".btn2").click(function() {
+            $("#hello").text("Hello 2 👍 by jquery ");
+        });
+    });
+</script>
